@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ai-service:
+    build: .
+    container_name: ai-container
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./references:/app/references
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1

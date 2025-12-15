@@ -1,0 +1,16 @@
+# ML service Python dependencies
+fastapi
+uvicorn[standard]
+numpy
+opencv-python
+face_recognition
+dlib
+scipy
+requests
+ultralytics
+easyocr
+torch
+Pillow
+
+# Optional (if you use python-dotenv for env files)
+# python-dotenv
